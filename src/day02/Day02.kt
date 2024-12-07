@@ -1,8 +1,14 @@
+package day02
+
+import println
+import readInput
 import java.util.regex.Pattern
 import kotlin.math.abs
 
 private const val MIN_LEVEL = 1
 private const val MAX_LEVEL = 3
+
+private const val PATH_RESOURCES = "day02/resources"
 
 fun main() {
 
@@ -59,16 +65,16 @@ fun main() {
     }
 
     // Test if implementation meets criteria for Part01:
-    val result01 = part1(readInput("resources/Day02_01_01"))
+    val result01 = part1(readInput("$PATH_RESOURCES/Day02_01_01"))
     check(result01 == 2)
 
-    val result02 = part1(readInput("resources/Day02_01_02"))
+    val result02 = part1(readInput("$PATH_RESOURCES/Day02_01_02"))
     check(result02 == 224)
 
-    val result03 = part2(readInput("resources/Day02_02_01"))
+    val result03 = part2(readInput("$PATH_RESOURCES/Day02_02_01"))
     check(result03 == 4)
 
-    val result04 = part2(readInput("resources/Day02_02_02"))
+    val result04 = part2(readInput("$PATH_RESOURCES/Day02_02_02"))
     check(result04 == 293)
 
     // Output results:

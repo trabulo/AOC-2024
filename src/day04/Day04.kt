@@ -1,4 +1,10 @@
-import Solution2.Direction.*
+package day04
+
+import day04.Solution2.Direction.*
+import println
+import readInput
+
+private const val PATH_RESOURCES = "day04/resources"
 
 fun main() {
 
@@ -13,17 +19,17 @@ fun main() {
     }
 
     // Test if implementation meets criteria for Part01:
-    val result01 = part1(readInput("resources/Day04_01_01"))
+    val result01 = part1(readInput("$PATH_RESOURCES/Day04_01_01"))
     check(result01 == 18)
 
-    val result02 = part1(readInput("resources/Day04_01_02"))
+    val result02 = part1(readInput("$PATH_RESOURCES/Day04_01_02"))
     check(result02 == 2532)
 
     // Test if implementation meets criteria for Part02:
-    val result03 = part2(readInput("resources/Day04_02_01"))
+    val result03 = part2(readInput("$PATH_RESOURCES/Day04_02_01"))
     check(result03 == 9)
 
-    val result04 = part2(readInput("resources/Day04_02_02"))
+    val result04 = part2(readInput("$PATH_RESOURCES/Day04_02_02"))
     check(result04 == 1941)
 
     // Output results:

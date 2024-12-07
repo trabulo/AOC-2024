@@ -1,5 +1,11 @@
+package day01
+
+import println
+import readInput
 import java.util.regex.Pattern
 import kotlin.math.abs
+
+private const val PATH_RESOURCES = "day01/resources"
 
 fun main() {
 
@@ -40,17 +46,17 @@ fun main() {
     }
 
     // Test if implementation meets criteria for Part01:
-    val result01 = part1(readInput("resources/Day01_01_01"))
+    val result01 = part1(readInput("$PATH_RESOURCES/Day01_01_01"))
     check(result01 == 11)
 
-    val result02 = part1(readInput("resources/Day01_01_02"))
+    val result02 = part1(readInput("$PATH_RESOURCES/Day01_01_02"))
     check(result02 == 2970687)
 
     // Test if implementation meets criteria for Part02:
-    val result03 = part2(readInput("resources/Day01_02_01"))
+    val result03 = part2(readInput("$PATH_RESOURCES/Day01_02_01"))
     check(result03 == 31)
 
-    val result04 = part2(readInput("resources/Day01_02_02"))
+    val result04 = part2(readInput("$PATH_RESOURCES/Day01_02_02"))
     check(result04 == 23963899)
 
     // Output results:
